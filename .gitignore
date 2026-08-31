@@ -66,3 +66,6 @@ Thumbs.db
 .venv
 agent-learn/
 .env-example
+src/
+uv.lock
+pyproject.toml
