@@ -57,3 +57,12 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+# custom
+.claude
+.obsidian
+.vscode
+.venv
+agent-learn/
+.env-example

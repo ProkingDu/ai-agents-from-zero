@@ -84,7 +84,7 @@ http://localhost/v1/workflows/run
 
 ### 2.2 请求头
 
-| 键            | 值                 |
+| 键             | 值                  |
 | ------------- | ------------------ |
 | Authorization | `Bearer {api_key}` |
 | Content-Type  | `application/json` |
