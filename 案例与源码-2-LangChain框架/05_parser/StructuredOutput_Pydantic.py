@@ -44,6 +44,8 @@ parser = PydanticOutputParser(pydantic_object=Product)
 # 生成「格式说明」字符串，拼进 Prompt，引导模型按 Product 的字段输出 JSON
 format_instructions = parser.get_format_instructions()
 
+print(format_instructions)
+
 # 在 system 里放入 {format_instructions}，human 里放 {topic}
 prompt_template = ChatPromptTemplate.from_messages(
     [

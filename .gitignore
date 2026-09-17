@@ -69,3 +69,4 @@ agent-learn/
 src/
 uv.lock
 pyproject.toml
+Practice/log/

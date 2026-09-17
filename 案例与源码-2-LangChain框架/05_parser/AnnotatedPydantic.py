@@ -24,12 +24,12 @@ class Person(BaseModel):
     age2: Age  # 这里 age2 会被 Pydantic 按 Field(ge=0, le=150) 校验
 
 
-try:
-    p = Person(name="z3", age=11, age2=188)  # age2=188 超出 0–150，会抛 ValidationError
-    print(p)
-except ValidationError as e:
-    print("数据校验失败：")
-    print(e)
+# try:
+p = Person(name="z3", age=11, age2=188)  # age2=188 超出 0–150，会抛 ValidationError
+print(p)
+# except ValidationError as e:
+#     print("数据校验失败：")
+#     print(e)
 
 """
 【输出示例】

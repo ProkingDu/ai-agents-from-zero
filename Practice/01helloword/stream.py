@@ -9,9 +9,10 @@ load_dotenv()
 ds = init_chat_model(
         model="qwen3.6-flash",
         model_provider="openai",
-        base_url = os.getenv("baseURL_ali"),
-        api_key=os.getenv("QWEN_API_KEY"),
-        temperature=0.5
+        base_url = os.getenv("BASE_URL_QWEN"),
+        api_key=os.getenv("aliQwen-api"),
+        temperature=1.9,
+        max_tokens=400
     )
 
 a = time.perf_counter()

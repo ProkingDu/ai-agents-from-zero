@@ -59,9 +59,9 @@ parser = StrOutputParser()
 # RunnableBranch( (条件1, 子链1), (条件2, 子链2), ..., 默认子链 )
 # 条件为可调用对象，接收输入 dict，返回 bool；第一个命中的分支会执行，最后一个参数是默认分支
 chain = RunnableBranch(
-    (lambda x: determine_language(x) == "japanese", japanese_prompt | model | parser),
-    (lambda x: determine_language(x) == "korean", korean_prompt | model | parser),
-    (english_prompt | model | parser),  # 默认分支：英语
+    (lambda x : determine_language(x) == "japanese", japanese_prompt | model | parser),
+    (lambda x :determine_language(x) == "korean", korean_prompt | model | parser),
+    (english_prompt | model | parser),
 )
 
 test_queries = [
